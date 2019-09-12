@@ -4,7 +4,7 @@
 
 		```verilog
 		if (a>1)
-			begin
+		    begin //多语句需要begin以及end包裹
 				s=a+1
 				s=2*s
 			end
@@ -36,3 +36,17 @@
 
 		
 
++ loop module：
+	+ forever
+	+ repeat
+	+ while
+	+ for
+
++ 命名块的禁用：
+	+ disable block_name;
+	+ 可以禁用任何一个block块（实现break）功能
++ 循环生成块：
+	+ generate，endgenerate
+
++ 声明临时变量（主要用于for循环）
+	+ genvar i
